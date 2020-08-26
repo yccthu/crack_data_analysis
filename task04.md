@@ -59,7 +59,7 @@ titan.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -202,7 +202,7 @@ plt.plot(data) #先随意的画一个折线图
 
 
 
-![png](output_14_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161640.png)
 
 
 ### **Matplotlib API绘图**
@@ -259,7 +259,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161646.png)
 
 
 【思路2】
@@ -297,10 +297,10 @@ plt.show()
 ```
 
     d:\anaconda3\envs\python3.6\lib\site-packages\ipykernel_launcher.py:21: RuntimeWarning: divide by zero encountered in log
-    
 
 
-![png](output_27_1.png)
+
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161649.png)
 
 
 ### 2.1.2 调整subplot间距
@@ -329,7 +329,7 @@ plt.subplots_adjust(wspace=0, hspace=0)
 ```
 
 
-![png](output_32_0.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161652.png)
 
 
 ### 2.1.3 颜色标记和线形
@@ -352,7 +352,7 @@ plt.plot(randn(30).cumsum(), 'ko--')
 
 
 
-![png](output_35_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161704.png)
 
 
 
@@ -368,7 +368,7 @@ plt.plot(randn(30).cumsum(), color = 'k', linestyle = 'dashed', marker = 'o')
 
 
 
-![png](output_36_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161707.png)
 
 
 
@@ -385,7 +385,7 @@ plt.plot(data1, 'k--', label = 'Default')
 
 
 
-![png](output_37_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161710.png)
 
 
 用`drawstyle = ' '`参数来设置类型
@@ -404,7 +404,7 @@ plt.plot(data2, 'k-', drawstyle = 'steps-post', label = 'steps-post')
 
 
 
-![png](output_39_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161713.png)
 
 
 把两个随机漫步的数据合在一张图上画，`plt.legent()`会帮助你创建图例，这是调用图例的唯一办法，**没有捷径**！
@@ -427,7 +427,7 @@ plt.legend(loc = 'best')
 
 
 
-![png](output_41_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161716.png)
 
 
 ### 2.1.4 刻度，标签和图例
@@ -471,7 +471,7 @@ ax.set_ylabel('Values')
 
 
 
-![png](output_45_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161720.png)
 
 
 【思路二】
@@ -505,7 +505,7 @@ yt_labels = ax.set_yticklabels(['-20','0','20','40'], rotation = 30, fontsize = 
 ```
 
 
-![png](output_48_0.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161724.png)
 
 
 ### 2.1.5 添加图例
@@ -534,7 +534,7 @@ ax.legend(loc = 'best')
 
 
 
-![png](output_51_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161727.png)
 
 
 ### 2.1.6 注释及subplot上绘图（科研刚需——待更新）
@@ -625,7 +625,7 @@ plt.show()
         titan['Fare'].max(): 'Max Fare'
             ^
     SyntaxError: invalid syntax
-    
+
 
 
 ### **使用Pandas和Seaborn绘图**
@@ -658,7 +658,7 @@ data5.plot.barh(ax = axes[1], color = 'k', alpha = 0.7)
 
 
 
-![png](output_66_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161732.png)
 
 
 实际分析的数据，总是由有更多的维度，例如下面的数据，将每一个总数的趋势和每一个单独分类的占比都有所表示。
@@ -682,7 +682,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -761,7 +761,7 @@ df.plot.bar(ax = axes[1], stacked=True, alpha = 0.5)
 
 
 
-![png](output_69_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161736.png)
 
 
 ### 2.1.9 直方图和密度图
@@ -787,7 +787,7 @@ plt.show()
 ```
 
 
-![png](output_74_0.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161740.png)
 
 
 【其他】如果想从数据上直观一点进行对比，我们也可以用value_counts()函数。
@@ -835,7 +835,7 @@ plt.subplots_adjust(wspace =0.4)
 ```
 
 
-![png](output_80_0.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161743.png)
 
 
 ## 2.4 任务四：可视化展示泰坦尼克号数据集中不同票价的人生存和死亡人数分布情况。（用折线图试试）（横轴是不同票价，纵轴是存活人数）
@@ -876,10 +876,10 @@ plt.show()
 
     d:\anaconda3\envs\python3.6\lib\site-packages\pandas\plotting\_matplotlib\core.py:1192: UserWarning: FixedFormatter should only be used together with FixedLocator
       ax.set_xticklabels(xticklabels)
-    
 
 
-![png](output_83_1.png)
+
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161746.png)
 
 
 
@@ -918,10 +918,10 @@ plt.show()
 
     d:\anaconda3\envs\python3.6\lib\site-packages\pandas\plotting\_matplotlib\core.py:1192: UserWarning: FixedFormatter should only be used together with FixedLocator
       ax.set_xticklabels(xticklabels)
-    
 
 
-![png](output_85_1.png)
+
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161751.png)
 
 
 ## 2.5 任务五：可视化展示泰坦尼克号数据集中不同仓位等级的人生存和死亡人员的分布情况。（用柱状图试试）
@@ -961,7 +961,7 @@ sns.countplot(x="Pclass", hue="Survived", data=titan)
 
 
 
-![png](output_88_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161754.png)
 
 
 【思考】看到这个前面几个数据可视化，说说你的第一感受和你的总结
@@ -986,7 +986,7 @@ facet.add_legend()
 
 
 
-![png](output_92_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161757.png)
 
 
 ## 2.7 任务七：可视化展示泰坦尼克号数据集中不同仓位等级的人年龄分布情况。（用折线图试试）
@@ -1008,7 +1008,7 @@ plt.legend((1,2,3),loc="best")
 
 
 
-![png](output_94_1.png)
+![png](https://gitee.com/yccthu/screenshots/raw/master/img/20200826161800.png)
 
 
 【思考】上面所有可视化的例子做一个总体的分析，你看看你能不能有自己发现
